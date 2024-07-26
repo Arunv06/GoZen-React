@@ -1,0 +1,28 @@
+/* src/components/Home.css */
+.home-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Full viewport height */
+    background-color: #f0f2f5; /* Light background color */
+    color: #333; /* Dark text color for contrast */
+    text-align: center;
+    padding: 20px;
+}
+
+.hero-name {
+    font-size: 3rem; /* Large font size for hero name */
+    font-weight: bold;
+    color: #007bff; /* Blue color for the hero name */
+    border: 2px solid #007bff; /* Border around the hero name */
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #ffffff; /* White background for the hero name */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    transition: transform 0.3s, color 0.3s;
+}
+
+.hero-name:hover {
+    color: #0056b3; /* Darker blue on hover */
+    transform: scale(1.05); /* Slight zoom effect */
+}

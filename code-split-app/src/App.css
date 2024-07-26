@@ -1,0 +1,66 @@
+/* src/App.css */
+.App {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f4f4f9; /* Light background color */
+  min-height: 100vh;
+  margin: 0;
+}
+
+.navbar {
+  background-color: #343a40; /* Dark background for navbar */
+  padding: 10px 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.navbar-menu {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+}
+
+.navbar-item {
+  margin: 0 15px;
+}
+
+.navbar-link {
+  color: #ffffff;
+  text-decoration: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  transition: background-color 0.3s, color 0.3s, transform 0.3s;
+  font-size: 16px;
+}
+
+.navbar-link:hover {
+  background-color: #f39c12; /* Highlight color */
+  color: #ffffff;
+  transform: scale(1.05);
+}
+
+.loading {
+  text-align: center;
+  font-size: 18px;
+  padding: 20px;
+}
+
+@media (max-width: 768px) {
+  .navbar-menu {
+      flex-direction: column;
+      align-items: center;
+  }
+
+  .navbar-item {
+      margin: 10px 0;
+  }
+
+  .navbar-link {
+      width: 100%;
+      text-align: center;
+      padding: 15px;
+  }
+}
